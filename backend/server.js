@@ -36,17 +36,17 @@ app.use("/api/v1", Router)
 // -------------DEPLOYMENT----------------//
 
 const dirName = path.resolve()
+console.log(dirName)
 if(process.env.NODE_ENV === "PRODUCTION"){
-    app.use(express.static(path.join(dirName, "/frontend/build")))
+    app.use(express.static(path.join(dirName, "../frontend/build")))
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(dirName, "/frontend/build/index.html"))
+        res.sendFile(path.resolve(dirName, "../frontend/build/index.html"))
     })
 }else{
     app.get("/", (req, res) => {
         res.send("Api is running")
     })
 }
-
 
 // -------------DEPLOYMENT----------------//
 
