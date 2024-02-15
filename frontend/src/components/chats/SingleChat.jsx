@@ -11,7 +11,7 @@ import { GET_CONFIG, POST_CONFIG, REQUEST_URL } from '../../url'
 import ScrollableChat from './ScrollableChat'
 import io from 'socket.io-client'
 
-const END_POINT = "http://localhost:5000"
+const END_POINT = "https://chat-app-t024.onrender.com"
 let socket, selectChatComaprare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
