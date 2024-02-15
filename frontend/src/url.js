@@ -1,4 +1,4 @@
-export const REQUEST_URL = "http://localhost:5000/api/v1"
+export const REQUEST_URL = "https://chat-app-t024.onrender.com/api/v1"
 
 export const POST_CONFIG = {
     headers: {
